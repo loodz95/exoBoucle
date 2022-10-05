@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // version dans laquelle sera généré le code
+    "module": "commonjs", // manière dont les imports doivent se faire
+    "strict": true, // "use strict" dans le js voir https://www.w3schools.com/js/js_strict.asp
+    "esModuleInterop": true, // gestion des imports
+    "skipLibCheck": true, // gestion des type des lib utilisées
+    "forceConsistentCasingInFileNames": true, // permet de récupérer une erreur si l'on importe ./MaLib.js au lieu de ./malib.js
+    "outDir": "./dist" // répertoire de sortie lors de la transpilation
+  },
+  "include": ["./src/**/*.ts"] // répertoires à inclure lors de la transpilation
+}
